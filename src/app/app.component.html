@@ -1,1 +1,27 @@
+<nav class="py-4 navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">My Web Portfolio</a>
+        <button class="navbar-toggler"
+        type="button"
+        (click)="basicNavbar.toggle()"
+        aria-expanded="false">
+        <i class="fas fa-bars"></i>
+        </button>
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" mdbCollapse #basicNavbar="mdbCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mushrooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cheesecake</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Collapsible wrapper -->
+    </div>
+</nav>
 <router-outlet></router-outlet>
