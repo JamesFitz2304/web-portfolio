@@ -52,4 +52,4 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
     MdbValidationModule
   ],
 })
-export class MdbModule { }
+export class MaterialBootstrapModule { }

@@ -3,17 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MdbModule } from './mdb.module';
+import { MaterialBootstrapModule } from './material-bootstrap/mdb.module';
+import { CrosswordGeneratorComponent } from './crossword-generator/crossword-generator.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CrosswordGeneratorComponent,
+    HomeComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
-    MdbModule
+    MaterialBootstrapModule
   ],
   providers: [],
   bootstrap: [AppComponent]
